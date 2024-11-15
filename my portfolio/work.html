@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - KEERTHI-Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 9);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(4, 4, 68);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(172, 172, 223);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .workSection {
+            max-width: 80vw;
+            margin: 80px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .workSection h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .workSection p {
+            margin: 20px 0;
+            font-size: 1.25rem;
+        }
+
+        .workSection ul {
+            margin: 20px 0;
+            list-style-type: none;
+        }
+
+        .workSection ul li {
+            margin-bottom: 10px;
+        }
+
+        .workSection ul li a {
+            color: rgb(172, 172, 223);
+            text-decoration: none;
+        }
+
+        .workSection ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .workSection .info {
+            flex: 1;
+            margin-right: 40px;
+            /* Increased margin for more space between text and image */
+        }
+
+        .workSection .info h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .workSection .photo {
+            flex: 1;
+            max-width: 40%;
+            /* Adjusted to match the space given to the photo in aboutSection */
+        }
+
+        .workSection .photo img {
+            width: 100%;
+            /* Ensures the image fills the container */
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Keerthi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="workSection">
+            <div class="info">
+                <h1>Work Experience:</h1>
+                <p>I've learnt and worked on:</p>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Competitive Programming</li>
+                </ul>
+                <p>The platforms that I've worked on:</p>
+                <ul>
+                    <li>LeetCode : solved 150+ problems with max rating 1444 <div>
+                            <a href="https://leetcode.com/u/keerthi_112/">My LeetCode Profile</a>
+                        </div>
+                    </li>
+                    <li>Codeforces : solved 100+ problems , a newbie <div>
+                            <a href="https://codeforces.com/profile/mupparaju11">My Codeforces Profile</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="photo">
+                <img src="work.jpeg" alt="Working Experience">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

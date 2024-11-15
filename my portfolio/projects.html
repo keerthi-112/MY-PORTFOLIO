@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - KEERTHI-Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 9);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(4, 4, 68);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(172, 172, 223);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .projectsSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 100vw;
+            height: auto;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .projectsText {
+            width: 50%;
+            /* Half of the screen width */
+            padding-right: 20px;
+        }
+
+        .projectsText h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .projectsText p {
+            margin: 20px 0;
+            font-size: 1.25rem;
+        }
+
+        .projectsText ul {
+            list-style-type: none;
+        }
+
+        .projectsText ul li h2 {
+            font-size: 1.1rem;
+        }
+
+        .projectsImages {
+            width: 50%;
+            /* Half of the screen width */
+            display: flex;
+            justify-content: space-between;
+            /* Arrange images side by side */
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .projectsImages .photo {
+            width: 48%;
+            /* Limit image container width */
+            margin-bottom: 20px;
+        }
+
+        .projectsImages img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Ensure responsiveness */
+        @media (max-width: 768px) {
+            .projectsSection {
+                flex-direction: column;
+                /* Stack text and images vertically on small screens */
+            }
+
+            .projectsText,
+            .projectsImages {
+                width: 100%;
+                /* Make both take full width on small screens */
+                padding: 20px;
+            }
+
+            .projectsImages {
+                flex-direction: column;
+                /* Stack the images vertically on small screens */
+            }
+
+            .projectsImages .photo {
+                width: 90%;
+                /* Slightly larger images on mobile */
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Keerthi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projectsSection">
+            <!-- Text Section -->
+            <div class="projectsText">
+                <h1>Projects:</h1>
+                <p>Here are some of my recent projects:</p>
+                <ul>
+                    <li>
+                        <h2>CALCULATOR - </h2>
+                        <div>This project is a functional and visually appealing calculator built using HTML, CSS,
+                            and JavaScript. This is my 1st project which left a great enthusiasm and interest in
+                            me to learn more about web dev.</div>
+                    </li>
+                    <li>
+                        <h2>MY PORTFOLIO - </h2>
+                        <div>This project showcases my expertise in HTML, CSS, JavaScript, and responsive design,
+                            demonstrating my ability to create functional and aesthetically pleasing websites. You
+                            can get to know me better through each tech field detail.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Images Section -->
+            <div class="projectsImages">
+                <div class="photo">
+                    <img src="new.calci.jpeg" alt="calculator">
+                </div>
+                <div class="photo">
+                    <img src="portfolio.new.jpeg" alt="portfolio">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

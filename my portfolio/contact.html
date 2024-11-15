@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - KEERTHI-Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 9);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(4, 4, 68);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(172, 172, 223);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .contactSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100vw;
+            height: auto;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .contactText {
+            width: 50%;
+            /* Half of the screen width */
+            padding-right: 20px;
+        }
+
+        .contactText h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contactText p {
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .contactText ul {
+            list-style-type: none;
+        }
+
+        .contactText ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .contactImage {
+            width: 50%;
+            /* Half of the screen width */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contactImage img {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Ensure responsiveness */
+        @media (max-width: 768px) {
+            .contactSection {
+                flex-direction: column;
+                /* Stack text and image vertically on small screens */
+                align-items: flex-start;
+            }
+
+            .contactText,
+            .contactImage {
+                width: 100%;
+                /* Make both take full width on small screens */
+                padding: 20px;
+            }
+
+            .contactImage img {
+                width: 90%;
+                /* Slightly larger image on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Keerthi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contactSection">
+            <!-- Text Section -->
+            <div class="contactText">
+                <h1>Contact Me:</h1>
+                <p>If you'd like to get in touch, feel free to reach out to me via email or through my contact details:</p>
+                <ul>
+                    <li>Email: keerthimupparaju11@gmail.com</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/keerthi-mupparaju/" target="_blank">Keerthi on LinkedIn</a></li>
+                    <li>GitHub: <a href="https://github.com/keerthi-112" target="_blank">Keerthi on GitHub</a></li>
+                </ul>
+            </div>
+
+            <!-- Image Section -->
+            <div class="contactImage">
+                <img src="thankyou.webp" alt="thank you">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
